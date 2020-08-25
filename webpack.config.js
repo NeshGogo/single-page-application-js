@@ -1,5 +1,4 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -16,7 +15,7 @@ module.exports = {
             {
                 test: /\.js?$/,
                 exclude: /node_modules/,
-                user: {
+                use: {
                     loader: 'babel-loader',
                 }
             }
